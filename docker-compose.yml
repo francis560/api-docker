@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web_api:
+    container_name: web_api
+    build: ./
+    expose:
+      - 3000
+    environment:
+      - PORT=3000
+    ports:
+      - 3000

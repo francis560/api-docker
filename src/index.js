@@ -14,7 +14,6 @@ app.use(express.static(path.join(__dirname, '/public/api-front')));
 app.set('port', process.env.PORT || 3000);
 
 
-
 app.use('/api/', require('./routes/api.routes'));
 
 module.exports = app;
